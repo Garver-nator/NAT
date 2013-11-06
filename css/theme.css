@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* =========================
+** Layout Styles
+** ========================= */
+
+/* hr border color = #cccdcd */
+/* nav border color = #bdbdbd */
+/* nav text color = #5e5f61 */
+/* sign up btn = #0084d9 */
+/* heading banner = #0084d9 */
+/* heading wrapped corner = #005c98 */
+/* text color = #282b2e */
+/* sign up text color = #282b2e */
+
+/* floats
+-------------------------------- */
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.clear-both {
+	clear: both;
+}
+.clear-right {
+	clear: right;
+}
+.clear-left {
+	clear: left;
+}
+.clear-none {
+	clear: none;
+}
+
+
+/* text styling and alignment
+-------------------------------- */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-inherit {
+	text-align: inherit;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-normal {
+	font-style: normal;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-trannone {
+	text-transform: none;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+
+/* rounded corners
+-------------------------------- */
+
+.radius {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.radius-three {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.radius-five {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.radius-ten {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.radius-twenty {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+.radius-fourty {
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+
+
+/* wrap
+-------------------------------- */
+
+.layout-wrap {
+    width: 1000px; /* 62.5em */
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.full-bleed {
+    padding: 0 !important;
+}
+
+
+/* column sizing
+-------------------------------- */
+
+[class*="col-"] {
+    float: left;
+    padding: 0 10px;
+}
+
+.col-1-10 {
+    width: 98px;
+}
+
+.col-1-5,
+.col-2-10 {
+    width: 196px;
+}
+
+.col-3-10 {
+    width: 294px;
+}
+
+.col-2-5,
+.col-4-10 {
+    width: 392px;
+}
+
+.col-1-2,
+.col-5-10 {
+    width: 490px;
+}
+
+.col-3-5,
+.col-6-10 {
+    width: 588px;
+}
+
+.col-7-10 {
+    width: 686px;
+}
+
+.col-4-5,
+.col-8-10 {
+    width: 784px;
+}
+
+.col-9-10 {
+    width: 882px;
+}
+
+.col-full,
+.col-1-1,
+.col-10-10 {
+    width: 980px;
+}
+
+
+/* site header
+-------------------------------- */
+
+.site-header {
+}
+
+
+/* site footer
+-------------------------------- */
+
+.site-footer {
+}
+
+
+/* =========================
+** Module Styles
+** ========================= */
+
+
+/* site navigation
+-------------------------------- */
+
+.site-nav {
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav-list {
+    display: table;
+    width: 100%;
+}
+
+.site-nav-li {
+    display: table-cell;
+}
+
+.site-nav-link {
+    background-image: url("../images/nav-bg.png");
+    border: 1px solid #bdbdbd;
+    border-width: 1px 0;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    color: #5e5f61;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-nav-link:hover {
+    background-position: 0 100%;
+}
+
+.is-active .site-nav-link {
+    background-image: none;
+    background-color: #fff;
+    border-width: 1px 1px 0;
+}
+
+
+/* slideshow
+-------------------------------- */
+
+.slide-item {
+    position: relative;
+    z-index: 200;
+}
+
+.slide-text {
+    background: url("../images/slide-grey-80.png") transparent repeat 0 0;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 220;
+    bottom: 0px;
+    left: 0px;
+}
+
+.slide-heading {
+    font-size: ;
+}
+
+.slide-subheading {
+    font-size: ;
+}
+
+
+/* site content
+-------------------------------- */
+
+.site-content {
+    background-color: #fff;
+}
+
+
+/* =========================
+** State Styles
+** ========================= */
+
+
