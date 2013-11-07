@@ -304,6 +304,24 @@
 }
 
 
+/* heading banners
+-------------------------------- */
+
+.heading-banner {
+    background-color: #0084d9;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* category module
+-------------------------------- */
+
+.catg-mod {
+
+}
+
+
 /* =========================
 ** State Styles
 ** ========================= */
