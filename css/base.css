@@ -87,13 +87,13 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #282b2e;
   text-decoration: none;
   line-height: inherit;
 }
 	a:hover,
 	a:focus {
-		color: #2795b6;
+		color: #282b2e;
 		cursor: pointer;
 		text-decoration: underline;
 	}

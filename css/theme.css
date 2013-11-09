@@ -151,10 +151,6 @@
 	padding: 0 10px;
 }
 
-.full-bleed {
-	padding: 0 !important;
-}
-
 
 /* column sizing
 -------------------------------- */
@@ -164,52 +160,42 @@
 	padding: 0 10px;
 }
 
-.col-1-10,
 .col-one {
 	width: 98px;
 }
 
-.col-2-10,
 .col-two {
 	width: 196px;
 }
 
-.col-3-10,
 .col-three {
 	width: 294px;
 }
 
-.col-4-10,
 .col-four {
 	width: 392px;
 }
 
-.col-5-10,
 .col-five {
 	width: 490px;
 }
 
-.col-6-10,
 .col-six {
 	width: 588px;
 }
 
-.col-7-10,
 .col-seven {
 	width: 686px;
 }
 
-.col-8-10,
 .col-egiht {
 	width: 784px;
 }
 
-.col-9-10,
 .col-nine {
 	width: 882px;
 }
 
-.col-10-10,
 .col-ten {
 	width: 980px;
 }
@@ -235,6 +221,36 @@
 
 .footer-copy {
 	color: #969696;
+}
+
+.scl-media {
+	padding: 10px;
+}
+
+.scl-media-icon {
+	background-image: url("../images/social-icons.png");
+	display: block;
+	float: left;
+	margin-left: 10px;
+	width: 26px;
+	height: 26px;
+	font: 0/0 a;
+}
+
+.scl-media-icon.facebook {
+	background-position: 0 0;
+}
+.scl-media-icon.flicker {
+	background-position: -26px 0;
+}
+.scl-media-icon.twitter {
+	background-position: -52px 0;
+}
+.scl-media-icon.vimeo {
+	background-position: -78px 0;
+}
+.scl-media-icon.rssfeed {
+	background-position: -104px 0;
 }
 
 
