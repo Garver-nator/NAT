@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="16" selection-start="2214" selection-end="2214" vertical-scroll-proportion="3.8333333" vertical-offset="1022" max-vertical-offset="3195">
+            <state line="213" column="12" selection-start="9341" selection-end="9341" vertical-scroll-proportion="0.2857143" vertical-offset="2955" max-vertical-offset="4305">
               <folding />
             </state>
           </provider>
@@ -44,16 +44,16 @@
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="16" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3975">
+            <state line="20" column="16" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3975">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="theme.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="31" selection-start="3064" selection-end="3109" vertical-scroll-proportion="0.35917902" vertical-offset="3315" max-vertical-offset="5790">
+            <state line="242" column="31" selection-start="3064" selection-end="3109" vertical-scroll-proportion="0.0" vertical-offset="3315" max-vertical-offset="5790">
               <folding />
             </state>
           </provider>
@@ -116,7 +116,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,6 +150,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -159,10 +159,18 @@
     <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/BlueModus" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -171,14 +179,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -351,16 +351,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="16" selection-start="2214" selection-end="2214" vertical-scroll-proportion="3.8333333" vertical-offset="1022" max-vertical-offset="3195">
+        <state line="242" column="31" selection-start="3064" selection-end="3109" vertical-scroll-proportion="0.0" vertical-offset="3315" max-vertical-offset="5790">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="31" selection-start="3064" selection-end="3109" vertical-scroll-proportion="0.35917902" vertical-offset="3315" max-vertical-offset="5790">
+        <state line="213" column="12" selection-start="9341" selection-end="9341" vertical-scroll-proportion="0.2857143" vertical-offset="2955" max-vertical-offset="4305">
           <folding />
         </state>
       </provider>
