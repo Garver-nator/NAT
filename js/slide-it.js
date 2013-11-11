@@ -30,12 +30,17 @@ slideshow.prototype.gotoSlide = function () {
 
 }
 
-slideshow.prototype.startSlides = function () {
-
+slideshow.prototype.startSlides = function (slideTime) {
+	this.slides.eq(0).addClass('is-active');
+	this.slides.hide().filter('.is-active').show();
+	setInterval(function(){
+		
+	}, slideTime);
 }
 
 var cycle = new slideshow($('.slideshow'));
 cycle.createCarousel();
+cycle.startSlides(1000);
 
 /*$(function (){
 	$('.slideshow').each(function () {
