@@ -344,6 +344,47 @@
 	line-height: 18px;
 }
 
+/* carousel thumbnails */
+
+.slide-thumb-cont {
+	margin-top: 10px;
+}
+
+.slide-thumb-item {
+	width: 159px;
+	height: 79px;
+	margin-left: 10px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+/*.slide-thumb-item.is-active {
+	border: 5px solid #0084d9;
+}*/
+
+.slide-thumb-item img {
+	height: 79px;
+	position: absolute;
+}
+
+.slide-thumb-item:first-child {
+	margin-left: 0;
+}
+
+/* carousel hover */
+
+.slide-thumb-item:hover,
+.slide-thumb-item.is-active {
+	border: 3px solid #0084d9;
+}
+
+.slide-thumb-item:hover img,
+.slide-thumb-item.is-active img {
+	left: -3px;
+	top: -3px;
+}
+
 
 /* site content
 -------------------------------- */

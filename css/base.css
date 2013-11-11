@@ -29,18 +29,6 @@ body {
 	cursor: default;
 }
 
-img,
-object,
-embed {
-	max-width: 100%;
-	height: auto;
-}
-
-object,
-embed {
-	height: 100%;
-}
-
 img {
 	-ms-interpolation-mode: bicubic;
 }
@@ -175,12 +163,6 @@ b {
 small {
   font-size: 60%;
   line-height: inherit;
-}
-
-code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: bold;
-  color: #7f0a0c;
 }
 
 /* Lists */
