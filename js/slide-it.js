@@ -34,7 +34,7 @@ slideshow.prototype.startSlides = function (slideTime) {
 	this.slides.eq(0).addClass('is-active');
 	this.slides.hide().filter('.is-active').show();
 	setInterval(function(){
-		
+
 	}, slideTime);
 }
 
