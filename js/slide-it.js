@@ -1,6 +1,7 @@
 /**
  * Created by chbymnky on 11/10/13.
  */
+var testVal;
 // create slideshow functionality for nat
 slideshow = function (slideCont) {
 	this.slidecont = slideCont;
@@ -31,8 +32,9 @@ slideshow.prototype.gotoSlide = function () {
 }
 
 slideshow.prototype.startSlides = function (slideTime) {
-	this.slides.eq(0).addClass('is-active');
-	this.slides.hide().filter('.is-active').show();
+	//this.slides[0].addClass('is-active');
+	//this.slides.hide().filter('.is-active').show();
+	console.log(this.slides)
 	setInterval(function(){
 
 	}, slideTime);

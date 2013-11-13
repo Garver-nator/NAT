@@ -44,7 +44,7 @@
       <file leaf-file-name="theme.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="488" column="20" selection-start="6639" selection-end="6639" vertical-scroll-proportion="-15.56" vertical-offset="6931" max-vertical-offset="9900">
+            <state line="390" column="29" selection-start="5101" selection-end="5101" vertical-scroll-proportion="-19.76" vertical-offset="5356" max-vertical-offset="9900">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="slide-it.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/slide-it.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="36" selection-start="830" selection-end="830" vertical-scroll-proportion="0.24743444" vertical-offset="143" max-vertical-offset="1020">
+            <state line="26" column="3" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44469783" vertical-offset="0" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -80,9 +80,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/css/slide-it.js" />
         <option value="$PROJECT_DIR$/css/base.css" />
-        <option value="$PROJECT_DIR$/js/slide-it.js" />
-        <option value="$PROJECT_DIR$/css/theme.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/theme.css" />
+        <option value="$PROJECT_DIR$/js/slide-it.js" />
       </list>
     </option>
   </component>
@@ -345,13 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="488" column="20" selection-start="6639" selection-end="6639" vertical-scroll-proportion="-15.56" vertical-offset="6931" max-vertical-offset="9900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="157" column="113" selection-start="6857" selection-end="6857" vertical-scroll-proportion="-9.375" vertical-offset="2130" max-vertical-offset="4755">
@@ -359,9 +352,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="390" column="29" selection-start="5101" selection-end="5101" vertical-scroll-proportion="-19.76" vertical-offset="5356" max-vertical-offset="9900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/slide-it.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="830" selection-end="830" vertical-scroll-proportion="0.24743444" vertical-offset="143" max-vertical-offset="1020">
+        <state line="26" column="3" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44469783" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>

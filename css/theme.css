@@ -372,9 +372,9 @@
 	cursor: pointer;
 }
 
-/*.slide-thumb-item.is-active {
-	border: 5px solid #0084d9;
-}*/
+.slide-thumb-item.is-active {
+	border: 3px solid #0084d9;
+}
 
 .slide-thumb-item img {
 	height: 79px;
