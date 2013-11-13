@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="78" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="4515">
+            <state line="157" column="113" selection-start="6857" selection-end="6857" vertical-scroll-proportion="-9.375" vertical-offset="2130" max-vertical-offset="4755">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="17" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3735">
+            <state line="171" column="17" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="2565" max-vertical-offset="3735">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="theme.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="350" column="1" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8985">
+            <state line="488" column="20" selection-start="6639" selection-end="6639" vertical-scroll-proportion="-15.56" vertical-offset="6931" max-vertical-offset="9900">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="slide-it.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/slide-it.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11972634" vertical-offset="0" max-vertical-offset="1020">
+            <state line="24" column="36" selection-start="830" selection-end="830" vertical-scroll-proportion="0.24743444" vertical-offset="143" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -79,10 +79,10 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/css/slide-it.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/base.css" />
-        <option value="$PROJECT_DIR$/css/theme.css" />
         <option value="$PROJECT_DIR$/js/slide-it.js" />
+        <option value="$PROJECT_DIR$/css/theme.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -158,11 +158,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/BlueModus" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -170,14 +170,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -186,6 +178,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -264,6 +264,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="78" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="4515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="17" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="2565" max-vertical-offset="3735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="350" column="1" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0" vertical-offset="5250" max-vertical-offset="8985">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/slide-it.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="206" column="34" selection-start="9196" selection-end="9196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4485">
           <folding />
         </state>
@@ -310,13 +338,6 @@
         <state line="10" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="1" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8985">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="171" column="17" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="2093" max-vertical-offset="3735">
@@ -324,16 +345,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="488" column="20" selection-start="6639" selection-end="6639" vertical-scroll-proportion="-15.56" vertical-offset="6931" max-vertical-offset="9900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="78" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="4515">
+        <state line="157" column="113" selection-start="6857" selection-end="6857" vertical-scroll-proportion="-9.375" vertical-offset="2130" max-vertical-offset="4755">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/slide-it.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11972634" vertical-offset="0" max-vertical-offset="1020">
+        <state line="24" column="36" selection-start="830" selection-end="830" vertical-scroll-proportion="0.24743444" vertical-offset="143" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
