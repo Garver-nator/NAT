@@ -35,19 +35,23 @@ slideshow.prototype.gotoSlide = function () {
 
 slideshow.prototype.startSlides = function (slideTime) {
 	var slides = $(this.slides),
-			thmbs = $('.slide-thumb-items');
+			thmbs = $('.slide-thumb-item');
+
 	slides.hide().filter('.is-active').show();
+
 	setInterval(function(){
 		var activeIndex = slides.filter('.is-active').removeClass('is-active').index(),
 				maxIndex = slides.length;
+
 		if (activeIndex < (maxIndex - 1)) {
 			activeIndex = activeIndex + 1
 		}
 		else {
 			activeIndex = 0;
 		}
+
 		slides.eq(activeIndex).addClass('is-active');
-		thmbs.removeClass('is-active').eq(0).addClass('is-active');
+		thmbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
 		slides.hide().filter('.is-active').fadeIn();
 	}, slideTime);
 }
