@@ -29,8 +29,18 @@ slideshow.prototype.createCarousel = function () {
 	this.thmbCont.children().eq(0).addClass('is-active');
 }
 
-slideshow.prototype.gotoSlide = function () {
+slideshow.prototype.gotoSlide = function (elm) {
+	elm.bind('click', function (){
+		var thisElm = $(this),
+				elmData = thisElm.data(),
+				slides = $(this.slides);
 
+		thisElm.siblings().removeClass('is-active');
+		thisElm.addClass('is-active');
+
+		slides.removeClass('is-active');
+		slides.eq(elmData.num).addClass('is-active');
+	});
 }
 
 slideshow.prototype.startSlides = function (slideTime) {
@@ -59,6 +69,7 @@ slideshow.prototype.startSlides = function (slideTime) {
 var cycle = new slideshow($('.slideshow'));
 cycle.createCarousel();
 cycle.startSlides(4000);
+cycle.gotoSlide($('.slide-thumb-item'));
 
 /*$(function (){
 	var slideCont = $('slideshow'),

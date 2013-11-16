@@ -368,17 +368,12 @@
 	height: 79px;
 	margin-left: 10px;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	cursor: pointer;
 }
 
 .slide-thumb-item.is-active {
 	border: 3px solid #0084d9;
-}
-
-.slide-thumb-item img {
-	height: 79px;
-	position: absolute;
 }
 
 .slide-thumb-item:first-child {
@@ -396,6 +391,24 @@
 .slide-thumb-item.is-active img {
 	left: -3px;
 	top: -3px;
+}
+
+.slide-thumb-item.is-active:after {
+	content: "";
+	position: absolute;
+	top: -15px; /* value = - border-top-width - border-bottom-width */
+	left: 50px; /* controls horizontal position */
+	border-width: 15px 15px 0; /* vary these values to change the angle of the vertex */
+	border-style: solid;
+	border-color: #0084d9 transparent;
+	/* reduce the damage in FF3.0 */
+	display: block;
+	width: 0;
+}
+
+.slide-thumb-item img {
+	height: 79px;
+	position: absolute;
 }
 
 
