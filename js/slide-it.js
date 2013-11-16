@@ -66,6 +66,18 @@ slideshow.prototype.startSlides = function (slideTime) {
 	}, slideTime);
 }
 
+slideshow.prototype.API = {
+	initiate: function() {
+
+	},
+	transThmb: function() {
+
+	},
+	pause: function() {
+
+	}
+}
+
 var cycle = new slideshow($('.slideshow'));
 cycle.createCarousel();
 cycle.startSlides(4000);
