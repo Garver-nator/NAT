@@ -15,7 +15,7 @@ slideshow = function (slideCont, interval) {
 }
 
 slideshow.prototype = {
-	initiate: function () {
+	init: function () {
 
 		// constrict the slideshow container for visual congruency
 		this.slidecont.css('width', this.sWidth+'px')
@@ -29,14 +29,15 @@ slideshow.prototype = {
 
 		// create individual thumbnails for the carousel
 		this.createThmbs();
-		//this.transSlide();
+		this.transSlide();
 	},
 	transSlide: function () {
 		var slides = $(this.slides),
 				thumbs = this.thmbCont.children(),
 				activeIndex = slides.filter('.is-active').index(),
 				activeThmb = thumbs.filter('.is-active').index(),
-				maxSlides = slides.length;
+				maxSlides = slides.length,
+				transSlideFN = this.transSlide();
 
 		if (!this.play) {
 			return;
@@ -53,26 +54,22 @@ slideshow.prototype = {
 			activeIndex = 0;
 		}
 
-
 		// alter active slide based on new index
 		slides.removeClass('is-active').eq(activeIndex).addClass('is-active');
 		slides.fadeOut().filter('.is-active').fadeIn();
 		thumbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
 
 		setInterval(function () {
-			//this.transSlide();
+			transSlideFN();
 		}, this.interval);
 	},
 	createThmbs: function () {
 		// place HTML markup for each thumbnail in the carousel
 		for (var i = 0; i < this.slides.length; i++)
 		{
-			for (var i = 0; i < this.slides.length; i++)
-			{
-				this.thmbCont.append('<div class="slide-thumb-item left" data-num="'+[i]+'">'+
-						'<img src="'+this.imgs[i]['src']+'">'+
-						'</dvi>');
-			}
+			this.thmbCont.append('<div class="slide-thumb-item left" data-num="'+[i]+'">'+
+															'<img src="'+this.imgs[i]['src']+'">'+
+														'</dvi>');
 		}
 
 		// set active thumbnail and bind click event to all
@@ -98,7 +95,7 @@ slideshow.prototype = {
 var slideshowSlct = $('.slideshow'),
 		slideIt = new slideshow($('.slideshow'), 6000);
 
-slideIt.initiate();
+slideIt.init();
 
 // halting slideshow functionality
 slideshowSlct.bind('mouseover', slideIt.pause());
