@@ -3,21 +3,18 @@
  */
 var testVal;
 // create slideshow functionality for nat
-slideshow = function (slideCont) {
+slideshow = function (slideCont, interval) {
 	this.slidecont = slideCont;
 	this.slides = slideCont.children();
 	this.imgs = slideCont.find('img');
 	this.sWidth = this.slides.width();
 	this.sHeight = this.slides.height();
-
-	// constrict the slideshow container for visual purposes
-	this.slidecont.css('width', this.sWidth+'px')
-								.css('height', this.sHeight+'px')
-								.css('overflow', 'hidden');
-	$(this.slides[0]).addClass('is-active');
+	this.interval = interval;
+	this.play = true;
+	this.thmbCont = $('<div class="slide-thumb-cont"></div>').insertAfter(this.slidecont);
 }
 
-slideshow.prototype.createCarousel = function () {
+/*slideshow.prototype.createCarousel = function () {
 	this.thmbCont = $('<div class="slide-thumb-cont"></div>').insertAfter(this.slidecont);
 
 	for (var i = 0; i < this.slides.length; i++)
@@ -27,9 +24,9 @@ slideshow.prototype.createCarousel = function () {
 													'</dvi>');
 	}
 	this.thmbCont.children().eq(0).addClass('is-active');
-}
+}*/
 
-slideshow.prototype.gotoSlide = function (elm) {
+/*slideshow.prototype.gotoSlide = function (elm) {
 	elm.bind('click', function (){
 		var thisElm = $(this),
 				elmData = thisElm.data(),
@@ -41,9 +38,9 @@ slideshow.prototype.gotoSlide = function (elm) {
 		slides.removeClass('is-active');
 		slides.eq(elmData.num).addClass('is-active');
 	});
-}
+}*/
 
-slideshow.prototype.startSlides = function (slideTime) {
+/*slideshow.prototype.startSlides = function (slideTime) {
 	var slides = $(this.slides),
 			thmbs = $('.slide-thumb-item');
 
@@ -64,24 +61,102 @@ slideshow.prototype.startSlides = function (slideTime) {
 		thmbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
 		slides.hide().filter('.is-active').fadeIn();
 	}, slideTime);
-}
+}*/
 
-slideshow.prototype.API = {
-	initiate: function() {
+slideshow.prototype = {
+	initiate: function () {
+		console.log('initiate called to')
+		// constrict the slideshow container for visual congruency
+		this.slidecont.css('width', this.sWidth+'px')
+				.css('height', this.sHeight+'px')
+				.css('postion', 'relative');
+		// position all slides for transition effect
+		this.slides.css('position', 'absolute');
 
+		// mark first slide as the active slide and hide the rest
+		$(this.slides[0]).addClass('is-active').show().siblings().hide();
+
+		// create individual thumbnails for the carousel
+		this.createThmbs();
+		//this.transSlide();
 	},
-	transThmb: function() {
+	transSlide: function () {
+		var slides = $(this.slides),
+				thumbs = $(this.thumbs),
+				activeIndex = slides.filter('.is-active').index(),
+				maxSlides = slides.length;
 
+		console.log('activeIndex is: '+activeIndex);
+		console.log('maxSlides is: '+maxSlides);
+
+		if (!this.play) {
+			return;
+		}
+
+		// change to the index of the next slide
+		if (activeIndex < (maxSlides - 1)) {
+			activeIndex = activeIndex + 1;
+		}
+		else {
+			activeIndex = 0;
+		}
+
+		slides.eq(activeIndex).addClass('is-active');
+		slides.fadeOut().filter('.is-active').fadeIn();
+		thumbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
+
+		//this.transSlide();
 	},
-	pause: function() {
+	createThmbs: function () {
+		// place HTML markup for each thumbnail in the carousel
+		for (var i = 0; i < this.slides.length; i++)
+		{
+			for (var i = 0; i < this.slides.length; i++)
+			{
+				this.thmbCont.append('<div class="slide-thumb-item left" data-num="'+[i]+'">'+
+						'<img src="'+this.imgs[i]['src']+'">'+
+						'</dvi>');
+			}
+		}
 
+		var thmbs = $('.slide-thumb-item'),
+				clickThmb = this.transThmb;
+		// set active thumbnail and bind click event to all
+		this.thmbCont.children()
+				.eq(0)
+				.addClass('is-active');
+		thmbs.bind('click', function () {
+			var
+		});
+	},
+	transThmb: function () {
+		var thmbCurr = $(this),
+				slides = $(this.slides),
+				thmbIndex = thmbCurr.filter('.is-active').index();
+
+		console.log('thmbIndex is: '+thmbIndex);
+
+		thmbCurr.addClass('is-active').siblings().removeClass('is-active');
+		slides.removeClass('is-active').eq(thmbIndex).addClass('is-active');
+
+		//this.transSlide();
+	},
+	pause: function () {
+		this.play = false;
+	},
+	resume: function () {
+		this.play = true;
 	}
 }
 
-var cycle = new slideshow($('.slideshow'));
-cycle.createCarousel();
-cycle.startSlides(4000);
-cycle.gotoSlide($('.slide-thumb-item'));
+var slideshowSlct = $('.slideshow'),
+		slideIt = new slideshow($('.slideshow'), 6000);
+
+slideIt.initiate();
+slideshowSlct.bind('mouseover', slideIt.pause());
+slideshowSlct.bind('mouseout', slideIt.resume());
+/*cycle.startSlides(4000);
+cycle.gotoSlide($('.slide-thumb-item'));*/
 
 /*$(function (){
 	var slideCont = $('slideshow'),

@@ -32,6 +32,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,30 +50,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="theme.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="12" selection-start="2321" selection-end="2321" vertical-scroll-proportion="0.42075256" vertical-offset="2571" max-vertical-offset="11580">
+            <state line="206" column="1" selection-start="2433" selection-end="2433" vertical-scroll-proportion="0.0" vertical-offset="10703" max-vertical-offset="11580">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="jquery.cycle2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.cycle2.js">
+        <entry file="file://$PROJECT_DIR$/js/jquery.cycle2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="630" column="12" selection-start="17709" selection-end="17717" vertical-scroll-proportion="-378.0" vertical-offset="0" max-vertical-offset="22740">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="24" column="33" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="22680">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide-it.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="slide-it.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/slide-it.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1725">
+            <state line="128" column="9" selection-start="3632" selection-end="3632" vertical-scroll-proportion="0.44469783" vertical-offset="1530" max-vertical-offset="2850">
               <folding />
             </state>
           </provider>
@@ -88,13 +95,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/css/slide-it.js" />
         <option value="$PROJECT_DIR$/css/jquery.cycle2.js" />
-        <option value="$PROJECT_DIR$/js/slide-it.js" />
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/theme.css" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/slide-it.js" />
       </list>
     </option>
   </component>
@@ -130,6 +137,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,17 +186,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/BlueModus" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,14 +203,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -212,6 +211,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -352,30 +359,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.cycle2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="630" column="12" selection-start="17709" selection-end="17717" vertical-scroll-proportion="-378.0" vertical-offset="0" max-vertical-offset="22740">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/slide-it.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1725">
+        <state line="82" column="19" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="3720">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/base.css">
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="19" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="3720">
+        <state line="206" column="1" selection-start="2433" selection-end="2433" vertical-scroll-proportion="0.0" vertical-offset="10703" max-vertical-offset="11580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
@@ -387,13 +387,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
+    <entry file="file://$PROJECT_DIR$/js/jquery.cycle2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="12" selection-start="2321" selection-end="2321" vertical-scroll-proportion="0.42075256" vertical-offset="2571" max-vertical-offset="11580">
+        <state line="24" column="33" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="22680">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/slide-it.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="9" selection-start="3632" selection-end="3632" vertical-scroll-proportion="0.44469783" vertical-offset="1530" max-vertical-offset="2850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
