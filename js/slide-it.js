@@ -65,7 +65,7 @@ slideshow = function (slideCont, interval) {
 
 slideshow.prototype = {
 	initiate: function () {
-		console.log('initiate called to')
+
 		// constrict the slideshow container for visual congruency
 		this.slidecont.css('width', this.sWidth+'px')
 				.css('height', this.sHeight+'px')
@@ -82,28 +82,32 @@ slideshow.prototype = {
 	},
 	transSlide: function () {
 		var slides = $(this.slides),
-				thumbs = $(this.thumbs),
+				thumbs = this.thmbCont.children(),
 				activeIndex = slides.filter('.is-active').index(),
+				activeThmb = thumbs.filter('.is-active').index(),
 				maxSlides = slides.length;
-
-		console.log('activeIndex is: '+activeIndex);
-		console.log('maxSlides is: '+maxSlides);
 
 		if (!this.play) {
 			return;
 		}
 
 		// change to the index of the next slide
-		if (activeIndex < (maxSlides - 1)) {
+		if (activeIndex != activeThmb) {
+			activeIndex = activeThmb;
+		}
+		else if (activeIndex < (maxSlides - 1)) {
 			activeIndex = activeIndex + 1;
 		}
 		else {
 			activeIndex = 0;
 		}
 
-		slides.eq(activeIndex).addClass('is-active');
-		slides.fadeOut().filter('.is-active').fadeIn();
-		thumbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
+		setTimeout(function () {
+			// alter active slide based on new index
+			slides.removeClass('is-active').eq(activeIndex).addClass('is-active');
+			slides.fadeOut().filter('.is-active').fadeIn();
+			thumbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
+		}, this.interval);
 
 		//this.transSlide();
 	},
@@ -119,27 +123,17 @@ slideshow.prototype = {
 			}
 		}
 
-		var thmbs = $('.slide-thumb-item'),
-				clickThmb = this.transThmb;
 		// set active thumbnail and bind click event to all
 		this.thmbCont.children()
 				.eq(0)
 				.addClass('is-active');
-		thmbs.bind('click', function () {
-			var
-		});
 	},
-	transThmb: function () {
-		var thmbCurr = $(this),
-				slides = $(this.slides),
-				thmbIndex = thmbCurr.filter('.is-active').index();
+	transThmb: function (thmbIndex) {
+		var thmbs = this.thmbCont.children();
 
-		console.log('thmbIndex is: '+thmbIndex);
+		thmbs.removeClass('is-active').eq(thmbIndex).addClass('is-active');
 
-		thmbCurr.addClass('is-active').siblings().removeClass('is-active');
-		slides.removeClass('is-active').eq(thmbIndex).addClass('is-active');
-
-		//this.transSlide();
+		this.transSlide();
 	},
 	pause: function () {
 		this.play = false;
@@ -153,8 +147,20 @@ var slideshowSlct = $('.slideshow'),
 		slideIt = new slideshow($('.slideshow'), 6000);
 
 slideIt.initiate();
+
+// halting slideshow functionality
 slideshowSlct.bind('mouseover', slideIt.pause());
 slideshowSlct.bind('mouseout', slideIt.resume());
+
+// change active class for thumbnails
+var thmbs = $('.slide-thumb-item');
+thmbs.bind('click', function () {
+	var elm = $(this),
+			elmIndex = elm.index();
+
+	//elm.addClass('is-active').siblings().removeClass('is-active');
+	slideIt.transThmb(elmIndex);
+});
 /*cycle.startSlides(4000);
 cycle.gotoSlide($('.slide-thumb-item'));*/
 
