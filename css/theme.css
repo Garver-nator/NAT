@@ -225,7 +225,7 @@
 	width: 270px;
 	height: 85px;
 	margin:  17px 0 0;
-	font: 0/0 a;
+	text-indent: -9999px;
 }
 
 
@@ -257,7 +257,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	font: 0/0 a;
+	text-indent: -9999px;
 }
 
 
@@ -708,7 +708,7 @@ ul.box-links {
 	height: 46px;
 	margin: 0 0 0 -23px;
 
-	font: 0/0 a;
+	text-indent: -9999px;
 
 	left: 50%;
 	top: 48px;
@@ -742,7 +742,7 @@ ul.box-links {
 	margin-left: 10px;
 	width: 26px;
 	height: 26px;
-	font: 0/0 a;
+	text-indent: -9999px;
 }
 
 .scl-media-icon.facebook {

@@ -240,3 +240,10 @@ blockquote {
   padding: 0;
 }
 
+/* HTML 5 support */
+header,
+nav,
+footer {
+	display: block;
+}
+

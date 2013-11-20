@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="83" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="4845">
+            <state line="49" column="11" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-5.2040815" vertical-offset="480" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
@@ -44,25 +44,25 @@
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="2" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3720">
+            <state line="242" column="20" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.0" vertical-offset="2918" max-vertical-offset="3825">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="theme.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="323" column="19" selection-start="4081" selection-end="4081" vertical-scroll-proportion="-8.96" vertical-offset="4621" max-vertical-offset="11670">
+            <state line="657" column="53" selection-start="9345" selection-end="9345" vertical-scroll-proportion="0.7206573" vertical-offset="9241" max-vertical-offset="11670">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide-it.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="slide-it.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/slide-it.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="45" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.709236" vertical-offset="908" max-vertical-offset="1785">
+            <state line="82" column="43" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.0" vertical-offset="908" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -88,11 +88,11 @@
       <list>
         <option value="$PROJECT_DIR$/css/slide-it.js" />
         <option value="$PROJECT_DIR$/css/jquery.cycle2.js" />
-        <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/js/slide-it.js" />
+        <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/theme.css" />
-        <option value="$PROJECT_DIR$/js/slide-it.js" />
       </list>
     </option>
   </component>
@@ -350,30 +350,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="83" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="4845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="2" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3720">
+        <state line="242" column="20" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.0" vertical-offset="2918" max-vertical-offset="3825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="19" selection-start="4081" selection-end="4081" vertical-scroll-proportion="-8.96" vertical-offset="4621" max-vertical-offset="11670">
+        <state line="49" column="11" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-5.2040815" vertical-offset="480" max-vertical-offset="4845">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/slide-it.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="45" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.709236" vertical-offset="908" max-vertical-offset="1785">
+        <state line="82" column="43" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.0" vertical-offset="908" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="657" column="53" selection-start="9345" selection-end="9345" vertical-scroll-proportion="0.7206573" vertical-offset="9241" max-vertical-offset="11670">
           <folding />
         </state>
       </provider>
