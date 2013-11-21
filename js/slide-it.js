@@ -1,6 +1,6 @@
-/**
- * Created by chbymnky on 11/10/13.
- */
+/* ====================================
+** Created by chbymnky
+** ==================================== */
 
 // create slideshow functionality for nat
 function slideshow($slideContIn, intervalIn) {
@@ -32,6 +32,22 @@ slideshow.prototype = {
 		this.$thmbCont.insertAfter(this.$slideCont);
 		this.createThmbs();
 		this.resume();
+
+		// halting slideshow functionality
+		this.$slideCont.bind('mouseover', { slider: this }, function (e) {
+			e.data.slider.pause.call(e.data.slider);
+		});
+		this.$slideCont.bind('mouseout', { slider: this }, function (e) {
+			e.data.slider.resume.call(e.data.slider);
+		});
+
+		// change active class for thumbnails
+		var $thumbs = this.$thmbCont.children();
+		$thumbs.bind('click', { slider: this }, function (e) {
+			var elm = $(this),
+					elmIndex = elm.index();
+			e.data.slider.transThmb(elmIndex);
+		});
 	},
 	transSlide: function($inSlidesCont, $inThumbsCont) {
 		var $slides = $inSlidesCont.children(),
@@ -40,7 +56,7 @@ slideshow.prototype = {
 				activeThmb = $thumbs.filter('.is-active').index(),
 				maxSlides = $slides.length;
 
-		// change active slide index the next slide
+		// change to the index of the next slide
 		if (activeIndex !== activeThmb) {
 			activeIndex = activeThmb;
 		}
@@ -55,23 +71,15 @@ slideshow.prototype = {
 		$slides.removeClass('is-active').eq(activeIndex).addClass('is-active');
 		$slides.fadeOut().filter('.is-active').fadeIn();
 		$thumbs.removeClass('is-active').eq(activeIndex).addClass('is-active');
-
-		// halting slideshow functionality
-		/*$slides.bind('mouseover', { slct: this }, function () {
-			console.log(event.data.slct);
-			//event.data.slct.pause;
-		});
-		$slides.bind('mouseout', { slct: this }, function () {
-			console.log(event.data.slct);
-			//event.data.slct.resume;
-		});*/
 	},
 	createThmbs: function () {
 		// place HTML markup for each thumbnail in the carousel
 		for (var i = 0; i < this.$slides.length; i++) {
 			this.$thmbCont.append('<div class="slide-thumb-item left" data-num="' + [i] + '">' +
-					'<img src="' + this.$imgs[i].src + '">' +
-					'</dvi>');
+																'<img src="' + this.$imgs[i].src + '" />' +
+																'<div class="slide-thumb-brdr"></div>'+
+																'<div class="slide-thumb-ind"></div>'+
+															'</dvi>');
 		}
 
 		// set active thumbnail and bind click event to all
@@ -99,16 +107,4 @@ slideshow.prototype = {
 	}
 };
 
-var $slideshowSlct = $('.slideshow'),
-		slideIt = new slideshow($slideshowSlct, 2000);
-
-
-// change active class for thumbnails
-var thmbs = $('.slide-thumb-item');
-thmbs.bind('click', function () {
-	var elm = $(this),
-			elmIndex = elm.index();
-
-	//elm.addClass('is-active').siblings().removeClass('is-active');
-	slideIt.transThmb(elmIndex);
-});
+var slideIt = new slideshow($('.slideshow'), 2000);
