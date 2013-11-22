@@ -3,21 +3,6 @@
 ** Layout
 ** ========================= */
 
-/* hr border color = #cccdcd */
-/* nav border color = #bdbdbd */
-/* nav text color = #5e5f61 */
-/* sign up btn = #0084d9 */
-/* sign up lt grey = #dbdbdb */
-/* sign up drk grey = #cac9c9 */
-/* sign up font = #282b2e */
-/* heading banner = #0084d9 */
-/* heading wrapped corner = #005c98 */
-/* text color = #282b2e */
-/* sign up text color = #282b2e */
-/* footer bg color = #2c2c2c */
-/* footer nav font = #fff */
-/* footer copy font = #969696 */
-
 /* floats
 -------------------------------- */
 
@@ -232,9 +217,8 @@
 }
 
 .search-input {
-	/*border: 1px solid rgba(0, 0, 0, 0.06);
-	box-shadow: inset 0 0 5px #000;
-	-webkit-appearance: none;*/
+	border: 1px solid #c2c2c2;
+	box-shadow: inset 0 0 5px #c2c2c2;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -267,11 +251,11 @@
 }
 
 .link-list li {
-	padding-left: 10px;
+	padding-left: 7px;
 }
 
 .link-list li a {
-	padding-left: 11px;
+	padding-left: 8px;
 }
 
 .link-list li:first-child,
@@ -399,7 +383,7 @@
 }
 
 /* carousel thumbnails */
-/* indicator size: 12px by 10px */
+/* indicator size: 10px by 9px */
 
 .slide-thumb-cont {
 	margin-top: 10px;
@@ -427,10 +411,11 @@
 
 .slide-thumb-ind {
 	position: absolute;
-	top: -12px;
+	top: -9px;
 	left: 74px;
 	display: block;
 	width: 0;
+	height: 0;
 }
 
 .slide-thumb-item img {
@@ -444,9 +429,8 @@
 	border-color: #0084d9;
 }
 
-.slide-thumb-item:hover .slide-thumb-ind,
 .slide-thumb-item.is-active .slide-thumb-ind {
-	border-width: 0 5px 12px;
+	border-width: 0 5px 9px;
 	border-style: solid;
 	border-color: #0084d9 transparent;
 }
@@ -664,6 +648,7 @@ ul.box-links {
 }
 
 .contest-item {
+	display: block;
 	margin-top: 9px;
 }
 
@@ -770,7 +755,12 @@ ul.box-links {
 ** State Styles
 ** ========================= */
 
-/* extended 
+/* initial input value 
 -------------------------------- */
+
+input.is-initial {
+	color: #9c9fa3;
+	font-size: 12px;
+}
 
 

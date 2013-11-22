@@ -7,7 +7,7 @@ function slideshow($slideContIn, intervalIn) {
 	this.$slideCont = $slideContIn;
 	this.$slides = this.$slideCont.children();
 	this.$imgs = this.$slideCont.find('img');
-	this.$thmbCont = $('<div class="slide-thumb-cont"></div>');
+	this.$thmbCont = $('<div class="slide-thumb-cont cf"></div>');
 	this.sWidth = this.$slides.width();
 	this.sHeight = this.$slides.height();
 	this.interval = intervalIn;
@@ -56,14 +56,17 @@ slideshow.prototype = {
 				activeThmb = $thumbs.filter('.is-active').index(),
 				maxSlides = $slides.length;
 
-		// change to the index of the next slide
-		if (activeIndex !== activeThmb) {
+		// change index value to that of the next slide
+		if (activeIndex !== activeThmb) 
+		{
 			activeIndex = activeThmb;
 		}
-		else if (activeIndex < (maxSlides - 1)) {
+		else if (activeIndex < (maxSlides - 1)) 
+		{
 			activeIndex = activeIndex + 1;
 		}
-		else {
+		else 
+		{
 			activeIndex = 0;
 		}
 
@@ -107,4 +110,4 @@ slideshow.prototype = {
 	}
 };
 
-var slideIt = new slideshow($('.slideshow'), 2000);
+var slideIt = new slideshow($('.js-slideshow'), 2000);

@@ -30,6 +30,13 @@ img {
 	vertical-align: middle;
 }
 
+input {
+	background-image: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+::-webkit-search-cancel-button { display: none; }
+
 textarea {
 	height: auto;
 	min-height: 50px;
@@ -89,11 +96,11 @@ p {
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility;
 }
-  p aside {
-    font-size: 0.875em;
-    line-height: 1.35;
-    font-style: italic;
-  }
+p aside {
+	font-size: 0.875em;
+	line-height: 1.35;
+	font-style: italic;
+}
 
 /* Default header styles */
 h1,
@@ -170,9 +177,9 @@ dl {
 ul, ol {
   margin-left: 0;
 }
-  ul.no-bullet, ol.no-bullet {
-    margin: 0;
-	}
+ul.no-bullet, ol.no-bullet {
+	margin: 0;
+}
 
 /* Unordered Lists */
 ul li ul,
@@ -212,30 +219,5 @@ dl dt {
 }
 dl dd {
   margin-bottom: 0.75em;
-}
-
-/* Abbreviations */
-/*abbr,
-acronym {
-  text-transform: uppercase;
-  font-size: 90%;
-  color: #222222;
-  border-bottom: 1px dotted #dddddd;
-  cursor: help; }
-
-abbr {
-  text-transform: none; }*/
-
-/* Blockquotes */
-blockquote {
-  margin: 0;
-  padding: 0;
-}
-
-/* HTML 5 support */
-header,
-nav,
-footer {
-	display: block;
 }
 
