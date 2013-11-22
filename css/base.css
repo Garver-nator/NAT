@@ -30,7 +30,8 @@ img {
 	vertical-align: middle;
 }
 
-input {
+input[type="search"],
+input[type="text"] {
 	background-image: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -92,14 +93,8 @@ p {
   font-family: inherit;
   font-weight: normal;
   font-size: 1em;
-  /*line-height: 1.6;*/
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility;
-}
-p aside {
-	font-size: 0.875em;
-	line-height: 1.35;
-	font-style: italic;
 }
 
 /* Default header styles */
